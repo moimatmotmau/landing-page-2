@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+html {
+  box-sizing: border-box;
+  line-height: 1.7;
+  font-size: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header-area .navbar .navbar-nav .nav-item {
+  padding: 0.5rem 0.8rem;
+}
+.header-area .navbar .navbar-nav .nav-item .nav-link.active {
+  color: #4458dc;
+}
+.header-area .navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #854fee;
+}
+
+.banner {
+  margin: 0;
+}
+.banner-grid {
+  background-image: url(../img/banner/home-banner.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.banner-grid .text-title {
+  position: relative;
+}
+.banner-grid .text-title::after {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 3px;
+  top: 50%;
+  left: 15%;
+  background-color: #854fee;
+}
+
+.brand {
+  margin-top: 60px;
+}
+.brand .single-brand {
+  text-align: center;
+  transition: all ease-in 0.3s;
+  border: 1px solid #201f1f17;
+  padding: 1rem 0;
+  border-radius: 3px;
+}
+.brand .single-brand:hover {
+  box-shadow: 0 10px 30px rgba(57, 56, 61, 0.205);
+  transform: scale(1.1);
+}
+.brand .single-brand:hover > img {
+  filter: brightness(0.15);
+}
+.brand .experience-area {
+  background-image: url(../img/client-info-bg.png);
+  background-position: 20px 40px;
+  background-repeat: no-repeat;
+  background-color: rgba(34, 230, 181, 0.1);
+  height: 100%;
+}
+.brand .experience-area .years-area {
+  margin-bottom: 100px;
+}
+
+.services {
+  margin: 150px 0;
+}
+.services-title {
+  margin-bottom: 100px;
+}
+
+.projects .project-button {
+  min-width: 100px;
+  border-radius: 0;
+  margin-right: 10px;
+}
+.projects .project-detail {
+  transition: all ease-in 0.3s;
+  border: 1px solid #201f1f17;
+}
+.projects .project-detail:hover {
+  box-shadow: 0 10px 30px rgba(57, 56, 61, 0.205);
+}
+.projects .project-detail:hover > img {
+  filter: brightness(1.12);
+}
+
+.famous {
+  margin: 100px 0;
+}
+.famous-wrap {
+  margin-bottom: 80px;
+}
+.famous .carousel {
+  width: 80.5%;
+  margin: 0 auto;
+}
+.famous .carousel-icon {
+  font-size: 2rem;
+  padding-top: 4px;
+}
+.famous .carousel .container .row {
+  box-shadow: 0 10px 30px rgba(57, 56, 61, 0.205);
+  background-color: #fff;
+}
+.famous .carousel .owl-dots .owl-dot.active > span {
+  background-color: red;
+}
+
+/*# sourceMappingURL=style.css.map */

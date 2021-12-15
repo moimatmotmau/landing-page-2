@@ -1,0 +1,122 @@
+@import './Abstracts/animation';
+@import './Abstracts/mixin';
+@import './Abstracts/variable';
+@import './Base/base';
+
+.header-area{
+    .navbar{
+        .navbar-nav{
+            .nav-item{
+                padding: .5rem .8rem;
+                .nav-link.active{
+                    color: $primarycolor;
+                }
+                .nav-link:hover{
+                    color: $primarycolor2;
+                }
+            }
+        }
+    }
+}
+
+// banner 
+.banner{
+    margin: 0;
+    &-grid{
+        background-image: url(../img/banner/home-banner.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        .text-title{
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                width: 30%;
+                height: 3px;
+                top: 50%;
+                left:15%;
+                background-color: $primarycolor2;
+            }
+        }
+    }
+}
+
+// brand 
+.brand{
+    margin-top: 60px;
+    .single-brand{
+        text-align: center;
+        transition: all ease-in .3s;
+        border: 1px solid $bordercolor;
+        padding: 1rem 0;
+        border-radius:3px;
+        &:hover{
+            box-shadow: $boxshadow;
+            transform: scale(1.1);
+            &>img{
+                filter: brightness(0.15);
+            }
+        }
+    }
+    .experience-area{
+        background-image: url(../img/client-info-bg.png);
+        background-position: 20px 40px;
+        background-repeat: no-repeat;
+        background-color: rgba(34, 230, 181, 0.1);
+        height: 100%;
+        .years-area{
+            margin-bottom: 100px;
+        }
+    }
+} 
+
+.services{
+    margin: 150px 0;
+    &-title{
+        margin-bottom: 100px;
+    }
+}
+
+//project
+.projects{
+    .project-button{
+        min-width: 100px ;
+        border-radius: 0;
+        margin-right: 10px;
+    }
+    .project-detail{
+        transition: all ease-in .3s;
+        border: 1px solid $bordercolor;
+        &:hover{
+            box-shadow: $boxshadow;
+            &>img{
+                filter: brightness(1.12);
+            }
+        }   
+
+
+    }
+}
+
+.famous{
+    margin: 100px 0;
+    &-wrap{
+        margin-bottom: 80px;
+    }
+    .carousel{
+        width: 80.5%;
+        margin: 0 auto;
+        &-icon{
+            font-size: 2rem;
+            padding-top:4px;
+        }
+        .container .row{
+            box-shadow: $boxshadow;
+            background-color: #fff;
+        }
+        .owl-dots .owl-dot.active > span{
+            background-color: red;
+        }
+    }
+}
